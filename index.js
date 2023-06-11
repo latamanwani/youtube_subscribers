@@ -5,15 +5,15 @@ require("dotenv").config();
 const port = 3000;
 
 // Parse JSON bodies (as sent by API clients)
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", true);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Connect to DATABASE
-const dbUrl =  "mongodb+srv://<lata007manwani>:<LqMrCOPxMSPwGhL>@subscribers.v1keo1i.mongodb.net/?retryWrites=true&w=majority";
+const dbUrl =  "mongodb+srv://latamanwani:Znmd%4012345@subscribers.v1keo1i.mongodb.net/?retryWrites=true&w=majority";
 mongoose
-  .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(dbUrl, { dbName: 'subscribers', useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
     console.log("connected to database");
     app.listen(port, () => console.log(`App listening on port ${port}!`));
