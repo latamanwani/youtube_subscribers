@@ -3,6 +3,7 @@ const Subscriber = require("./models/subscriber");
 const data = require("./data");
 require("dotenv").config();
 
+mongoose.set("strictQuery", true);
 // Connect to database
 const dbUrl =  "mongodb+srv://latamanwani:Znmd%4012345@subscribers.v1keo1i.mongodb.net/?retryWrites=true&w=majority";
 mongoose
