@@ -1,3 +1,6 @@
+Summary-
+https://docs.google.com/document/d/1Lca8MB8jnUfkHPyXw4N-I__mLmuDn_wT/edit?usp=sharing&ouid=106718420697177264749&rtpof=true&sd=true
+
 # Almabetter Backend Capstone Project - Get YouTube Subscribers
 In this project, we used Node.js, Express.js and database MongoDB to GET all the subscriber's data from the data base, based on our conditions.  Used Postman to test and modify APIs
 
